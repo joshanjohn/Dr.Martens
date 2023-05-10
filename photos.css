@@ -1,0 +1,18 @@
+/* .bootsimages img{
+  
+   width: 400px;
+        height: auto; 
+        display:block; 
+
+}  */
+
+@media only screen and (max-width: 1920px) {
+    .bootsimages img {
+        
+        max-width: 100%;
+        min-width: 300px;
+        height: auto;
+        display:block;
+
+    }
+  }
