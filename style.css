@@ -1,0 +1,6 @@
+@media only screen and (max-width: 768px) {
+    /* mobile version */
+    body{
+        background-color: rgb(199, 237, 199);
+    }
+}
