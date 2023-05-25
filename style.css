@@ -432,6 +432,15 @@
     .winter_desc h1, .made_of_desc h1{
         font-size: 2.1rem;
     }
+	.contact_container{
+	width: 50%;
+	height: 80%;
+	}
+	.columns_dev {
+	width: 100%;
+	display: block;
+	}
+}
 
 
 }
