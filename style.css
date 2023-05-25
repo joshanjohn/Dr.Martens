@@ -101,7 +101,7 @@
 }
 
 
- .winter img, .made_of img{
+.winter img, .made_of img{
     /* padding: 2rem; */
     width: 48%;
     height: auto;
@@ -124,6 +124,10 @@
     margin-left: 3rem;
 }
 
+.winter_desc a{
+    margin-left: 80%;
+    justify-self: end;
+}
 
 /* watch button */
 .button{
@@ -143,10 +147,7 @@
     background-color: #f19812;
 }
 
-.winter_desc a{
-    margin-left: 80%;
-    justify-self: end;
-}
+
 
 
 /* Contact page CSS*/
@@ -378,6 +379,8 @@
  .heart {
      color: #5A5A5A;
 }
+
+
  @media only screen and (max-width: 768px) {
     /* mobile version */
     /* All the css style for mobile version should put here */
