@@ -50,6 +50,88 @@
      color: gray;
      background: white;
 }
+ .logo{
+     display:flex;
+     align-items:center;
+}
+ .bars{
+     float: right;
+}
+ #hamburger-icon {
+     margin: auto 0;
+     display: none;
+     position: relative;
+     background: black;
+     align-items: center;
+     height: 8vh;
+     width: 100%;
+     justify-content: space-between;
+     padding: 0 50px 0 100px;
+}
+ #hamburger-icon li{
+     margin: 1.5vh;
+     padding-top: 2vh;
+}
+ #hamburger-icon ul hr{
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+}
+ #hamburger-icon ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: 500;
+     padding: 8px 15px;
+     border-radius: 5px;
+     letter-spacing: 1px;
+     transition: all 0.5s ease;
+     background-color: #2A2727;
+}
+ #hamburger-icon .logo{
+     display:flex;
+     align-items:center;
+     padding-top: 3vh;
+     float:left;
+     clear: right;
+}
+ #hamburger-icon div {
+     width: 35px;
+     height: 3px;
+     background-color: white;
+     margin: 6px 0;
+     transition: 0.4s;
+}
+ .open .bar1 {
+     -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+     transform: rotate(-45deg) translate(-6px, 6px);
+}
+ .open .bar2 {
+     opacity: 0;
+}
+ .open .bar3 {
+     -webkit-transform: rotate(45deg) translate(-6px, -8px);
+     transform: rotate(45deg) translate(-6px, -8px);
+}
+ .open .mobile-menu {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+}
+ .mobile-menu {
+     display: none;
+     position: absolute;
+     top: 8vh;
+     left: 0;
+     height: 32vh;
+     width: 100%;
+     background-color:#2A2727;
+}
+ .mobile-menu li {
+     margin-bottom: 10px;
+     list-style-type: none 
+}
 /* main css */
  .main_wallpaper img {
      width: 100%;
@@ -65,86 +147,66 @@
      font-family: 'Outfit', sans-serif;
      font-size: 2rem;
 }
-
-.winter, .made_of{
-    display: flex;
-    width: 100%;
-    height: auto;
-    max-height: 100vh;
-    color: #092a46;
-    background: linear-gradient(
-    to top left,
-    rgb(81, 164, 247) 0%,
-    rgb(81, 164, 247) 90%,
-    white 90%,
-    white 100%
-  );
-    margin: 2rem auto;
-    margin-bottom: 2rem;
+ .winter, .made_of{
+     display: flex;
+     width: 100%;
+     height: auto;
+     max-height: 100vh;
+     color: #092a46;
+     background: linear-gradient( to top left, rgb(81, 164, 247) 0%, rgb(81, 164, 247) 90%, white 90%, white 100% );
+     margin: 2rem auto;
+     margin-bottom: 2rem;
 }
-
-.made_of{
-    background: linear-gradient(
-    to bottom right,
-    #D80032 0%,
-    #D80032 90%,
-    white 90%,
-    white 100%
-  );
-  color: white;
+ .made_of{
+     background: linear-gradient( to bottom right, #D80032 0%, #D80032 90%, white 90%, white 100% );
+     color: white;
 }
-
-.made_of_desc p{
-    font-size: 1.2rem;
-    color: #fff2f2dd;
-    margin: 1rem 5rem 4rem 0;
+ .made_of_desc p{
+     font-size: 1.2rem;
+     color: #fff2f2dd;
+     margin: 1rem 5rem 4rem 0;
 }
-
-
-.winter img, .made_of img{
-    /* padding: 2rem; */
-    width: 48%;
-    height: auto;
+ .winter img, .made_of img{
+    /* padding: 2rem;
+     */
+     width: 48%;
+     height: auto;
 }
-.made_of_desc, .winter_desc{
-    margin: 2rem;
+ .made_of_desc, .winter_desc{
+     margin: 2rem;
 }
-.made_of_desc h1{
-    font-size: 6rem;
+ .made_of_desc h1{
+     font-size: 6rem;
 }
-.winter_desc p{
-    font-size: 1.2rem;
-    color: white;
-    margin: 2rem 0 2rem 8rem;
-    text-align: justify;
+ .winter_desc p{
+     font-size: 1.2rem;
+     color: white;
+     margin: 2rem 0 2rem 8rem;
+     text-align: justify;
 }
-.winter_desc h1{
-    font-size: 6rem;
-    text-align: right;
-    margin-left: 3rem;
+ .winter_desc h1{
+     font-size: 6rem;
+     text-align: right;
+     margin-left: 3rem;
 }
-
-.winter_desc a{
-    margin-left: 80%;
-    justify-self: end;
+ .winter_desc a{
+     margin-left: 80%;
+     justify-self: end;
 }
-
 /* watch button */
-.button{
-    text-decoration: none;
-    border-radius: 0.2rem;
-    font-size: 1.4rem;
-    color: white;
-    border-bottom: 0.3rem solid #f1a637;
-    padding: 0.5rem ;
-    background-color: #f1a637;
-
+ .button{
+     text-decoration: none;
+     border-radius: 0.2rem;
+     font-size: 1.4rem;
+     color: white;
+     border-bottom: 0.3rem solid #f1a637;
+     padding: 0.5rem ;
+     background-color: #f1a637;
 }
-
-.button:hover{
-    border-bottom: 0.3rem solid white;
-    transition: all ease 0.3s;
-    background-color: #f19812;
+ .button:hover{
+     border-bottom: 0.3rem solid white;
+     transition: all ease 0.3s;
+     background-color: #f19812;
 }
 
 .hd-h2{
@@ -410,11 +472,15 @@ input[type="text"],input[type="email"], input[type="number"] {
  .heart {
      color: #5A5A5A;
 }
-
-
  @media only screen and (max-width: 768px) {
     /* mobile version */
     /* All the css style for mobile version should put here */
+     header nav {
+         display: none;
+    }
+     #hamburger-icon {
+         display: block;
+    }
      .main_wallpaper img{
          width: 100%;
          height: 50vh;
@@ -432,37 +498,40 @@ input[type="text"],input[type="email"], input[type="number"] {
      #desk_nav {
          display: none;
     }
-
-    .winter, .made_of{
-        flex-direction: column;
-        width: 100%;
-        margin: 2rem auto;
-        padding: 0;
-        height: auto;
-        max-height: 100%;
+     .winter, .made_of{
+         flex-direction: column;
+         width: 100%;
+         margin: 2rem auto;
+         padding: 0;
+         height: auto;
+         max-height: 100%;
     }
-/* 
-    .made_of img{
-        width: 100%;
-        max-height: 60vh;
-        
-    } */
-    .winter img, .made_of img{
-        width: 100%;
-        flex: 1;
-        max-height: 60vh;
-        padding: 0;
+    /* .made_of img{
+         width: 100%;
+         max-height: 60vh;
     }
-
-    .winter_desc{
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-        flex: 1;
+     */
+     .winter img, .made_of img{
+         width: 100%;
+         flex: 1;
+         max-height: 60vh;
+         padding: 0;
     }
-
-    .winter_desc h1, .made_of_desc h1{
-        font-size: 2.1rem;
+     .winter_desc{
+         margin-top: 2rem;
+         margin-bottom: 4rem;
+         flex: 1;
     }
-
-
+     .winter_desc h1, .made_of_desc h1{
+         font-size: 2.1rem;
+    }
+     .contact_container{
+         width: 50%;
+         height: 80%;
+    }
+     .columns_dev {
+         width: 100%;
+         display: block;
+    }
 }
+ 
