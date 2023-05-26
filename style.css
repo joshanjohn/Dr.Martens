@@ -293,7 +293,15 @@
 	text-transform: initial;
 }
 
+/* about section /about.html */
+#about_hd{
+    text-align: center;
+}
 
+#about_hd h1{
+    font-size: 6rem;
+    color: rgba(255, 205, 6, 0.903);
+}
 
 /* Contact page CSS*/
 .background_contact{
