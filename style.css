@@ -42,10 +42,36 @@ main h2{
     color: white;
   }
 
-  /* hide content about each leather */
+  /* hide content  */
     main #onClick {
     padding:1rem;
     display: none;
     transition:opacity 0.5s;
 } 
 
+
+
+/* Boots image sliges */
+* {
+    box-sizing: border-box
+}
+.image-slideshow {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+.image-slideshow img {
+  width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-slideshow .fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
