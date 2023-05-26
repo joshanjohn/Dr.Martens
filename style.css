@@ -199,12 +199,10 @@
      border-radius: 0.2rem;
      font-size: 1.4rem;
      color: white;
-     border-bottom: 0.3rem solid #f1a637;
      padding: 0.5rem ;
      background-color: #f1a637;
 }
  .button:hover{
-     border-bottom: 0.3rem solid white;
      transition: all ease 0.3s;
      background-color: #f19812;
 }
@@ -223,20 +221,77 @@
     font-size: 2rem;
 }
 
-/* carousel */
-#carousel{
-    display: flex;
-    height: 60vh;
-    overflow-x: scroll;
+
+.unique_boots {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
 }
 
-.carousel-item img{
-    height: 100vh;
+.unique_boots .card {
+	position: relative;
+	width: 45vh;
+	height: 65vh;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
 }
 
-.card img{
-    height: 100%;
+.unique_boots .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
 }
+
+.unique_boots .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.unique_boots .card .content .imgBx {
+	position: relative;
+	width: 300px;
+	height: 350px;
+	overflow: hidden;
+}
+
+.unique_boots .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.unique_boots .card .content .contentBx h3 {
+	color: #a31313;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: 500;
+	font-size: 1rem;
+	text-align: center;
+	margin: 1rem 0 1rem;
+	line-height: 1.1em;
+}
+
+.unique_boots .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
 
 
 /* Contact page CSS*/
