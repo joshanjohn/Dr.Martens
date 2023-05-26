@@ -147,19 +147,48 @@
     background-color: #f19812;
 }
 
+.hd-h2{
+    margin: 4rem 0  1rem 0;
+}
 
+.hd-h2 hr{
+    margin: 0 20rem 2rem 20rem;
+}
+.hd-h2 h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+/* carousel */
+#carousel{
+    display: flex;
+    height: 60vh;
+    overflow-x: scroll;
+}
+
+.carousel-item img{
+    height: 100vh;
+}
+
+.card img{
+    height: 100%;
+}
 
 
 /* Contact page CSS*/
- .background_contact{
+.background_contact{
      background-image: url('./images/wallpaper_contact.jpg');
      background-size: cover;
      background-position: center;
 }
- .contact_main{
+
+.contact_main{
      height: 80vh;
 }
- .contact_container{
+
+.contact_container{
      display: block;
      margin: 7.3em auto ;
      width: 30%;
@@ -175,19 +204,21 @@
      width: 100%;
      height: auto;
 }
- label{
+
+label{
      display: block;
      margin: auto;
      padding: 1vh;
 }
- #contact_title{
+
+#contact_title{
      display: flex;
      margin: 4% auto;
      justify-content: center;
      font-family: sans-serif;
      font-size: 30px ;
 }
- input[type="text"],input[type="email"], input[type="number"] {
+input[type="text"],input[type="email"], input[type="number"] {
      display: block;
      margin: 2% auto;
      width: 85%;
