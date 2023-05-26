@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
  *, *:before, *:after {
      margin: 0;
@@ -786,7 +787,7 @@ input[type="text"],input[type="email"], input[type="number"] {
 
 /* .CSS for the gallery test.HTML */
 
-/* et body and text to align center */
+/* let body and text to align center */
 body {
   font-family: acumin-pro, system-ui, sans-serif;
   margin: 0%;
@@ -826,5 +827,93 @@ body {
 /* (zooms in slightnly at 1.1 when hover) */
 .grid-gallery .grid-phtoes:hover img{
   transform: scale(1.1);
+}
+
+
+
+
+/* boots */
+ .bootsPages{
+    font-family: acumin-pro, system-ui, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;  
+    background-color: whitesmoke; 
+  }
+
+  /* image */
+ .bootsPages .boots img{
+    height: auto;
+    max-width: 100%;
+    flex-direction: column;
+
+}
+ h1.pageName{
+    font-size:50px;
+    margin-top: 5%;
+    margin: 2%;
+}
+/* font size for h2 */
+.bootsPages .boots h2{
+    font-size: 15px;
+    margin: 2%;
+}
+.bootsPages .boots h1{
+  margin: 2%;
+}
+
+/* button related bellow */
+ .bootsPages .boots.button {
+    transition-duration: 0.4s;
+  }
+  
+  .bootsPages .button {
+    background-color: #2E3133; /* black */
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 3%;
+  }
+  /* turns gray when hover */
+  .bootsPages .button:hover {
+    background-color: #949BA0; /*gray*/
+    color: white;
+  }
+
+  /* hide content  */
+ .bootsPages #onClick {
+    padding:1rem;
+    display: none;
+    transition:opacity 0.5s;
+} 
+
+
+/* Boots image slides */
+.bootsPages {
+    box-sizing: border-box
+}
+.bootsPages .image-slideshow {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+.bootsPages .image-slideshow img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bootsPages .image-slideshow .fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
 }
 
