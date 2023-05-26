@@ -1,3 +1,6 @@
-function toggleMobileMenu(menu) {
-    menu.classList.toggle('open');
-}
+window.onload = function(){
+    function toggleMobileMenu(menu) {
+        menu.classList.toggle('open');
+    }
+    
+};
