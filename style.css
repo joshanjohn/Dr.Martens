@@ -373,6 +373,13 @@ input[type="text"],input[type="email"], input[type="number"] {
 }
 /* History page CSS */
 
+.history-intro h1{
+	font-size: 36px;
+}
+.history-intro p{
+	font-size: 18px;
+}
+
 .chronological {
   position: relative;
   width: 100%;
