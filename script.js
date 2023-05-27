@@ -9,7 +9,16 @@ function toggleMobileMenu(menu) {
 window.onload  = function() {
     
 
-    myFunction(); //calling show and hide button function
+//calling show and hide button function
+buttonFunction();
+
+buttonFunction2();
+
+buttonFunction3();
+
+buttonFunction4();
+
+buttonFunction5();
 
     //    slide show function 
     displayImages(); //calling slide show functions
@@ -95,22 +104,92 @@ window.onload  = function() {
                 setTimeout(displayImages5, 2000); 
                 }
 
-            
-      // Show more button function
-    function myFunction() {
-    const x = document.querySelectorAll("#onClick");
- 
+          
+                
 
-    for (let i = 0; i<x.length; i++){
-    if (x[i].style.display === "none") {
-      x[i].style.display = "block";
-    } else {
-      x[i].style.display = "none";
+
+      // Show more button functions to hide and show individual buttons
+    function buttonFunction() {
+    const b1 = document.querySelectorAll("#onClick");
+    let i;
+    for (i = 0; i<b1.length; i++){
+
+    if (b1[i].style.display === "none") {
+      b1[i].style.display = "block";
+    } 
+    else {
+      b1[i].style.display = "none";
     }
+  }
+
+    } //function
+
+    function buttonFunction2() {
+      const b2 = document.querySelectorAll("#onClick-2");
+   let i;
+  
+  
+      for ( i = 0; i<b2.length; i++){
+  
+      if (b2[i].style.display === "none") {
+        b2[i].style.display = "block";
+      } 
+      else {
+        b2[i].style.display = "none";
+      }
+    }
+  
+      } //function
+      function buttonFunction3() {
+        const b3 = document.querySelectorAll("#onClick-3");
+     
+    let i;
     
-    }
+        for (i = 0; i<b3.length; i++){
+    
+        if (b3[i].style.display === "none") {
+          b3[i].style.display = "block";
+        } 
+        else {
+          b3[i].style.display = "none";
+        }
+      }
+    
+        } //function
+        function buttonFunction4() {
+          const b4 = document.querySelectorAll("#onClick-4");
+       let i;
+      
+      
+          for ( i = 0; i<b4.length; i++){
+      
+          if (b4[i].style.display === "none") {
+            b4[i].style.display = "block";
+          } 
+          else {
+            b4[i].style.display = "none";
+          }
+        }
+      
+          } //function
+          function buttonFunction5() {
+            const b5 = document.querySelectorAll("#onClick-5");
+         
+        let i;
+        
+            for ( i = 0; i<b5.length; i++){
+        
+            if (b5[i].style.display === "none") {
+              b5[i].style.display = "block";
+            } 
+            else {
+              b5[i].style.display = "none";
+            }
+          }
+        
+            } //function
 
-}
+ 
 
 // selet all buttons 
 // loop through buttons
