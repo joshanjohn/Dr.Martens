@@ -372,7 +372,12 @@ input[type="text"],input[type="email"], input[type="number"] {
      transform: scale(1.05);
 }
 /* History page CSS */
-
+.history-intro h1{
+	font-size:36px;
+}
+.history-intro p{
+	font-size: 24px;
+}
 .chronological {
   position: relative;
   width: 100%;
@@ -386,7 +391,7 @@ input[type="text"],input[type="email"], input[type="number"] {
   position: absolute;
   width: 0.2vh;
   background: black;
-  top: 0;
+  top: 20vh;
   bottom: 0;
   left: 50%;
   margin-left: -1px;
@@ -815,8 +820,8 @@ ul.social-icons {
     }
 	.chronological::after {
 		left: 90px;
+		top: 23vh;
 	}
-
 	.container {
 		width: 100%;
 		padding-left: 120px;
