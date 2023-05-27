@@ -7,6 +7,23 @@ function toggleMobileMenu(menu) {
 
 
 window.onload  = function() {
+
+  // /about section
+
+  let read = document.querySelector(".button");  
+  let more = document.querySelector(".more");  
+  let st_more = document.querySelector(".strat_more");  
+  let st_read = document.querySelector(".strat_read");
+
+  st_read.addEventListener("click", ()=>{
+    st_more.style.display = "block";
+    st_read.style.display = "none";
+  });
+
+  read.addEventListener("click", ()=>{
+    more.style.display = "block";
+    read.style.display = "none";
+  });
     
 
     myFunction(); //calling show and hide button function
