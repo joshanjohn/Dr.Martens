@@ -903,7 +903,7 @@ body {
   grid-gap: 20px;
 }
 /* hidden overflow */
-.grid-gallery .grid-phtoes{
+.grid-gallery .grid-photos{
   mask-position: reletive;
   overflow: hidden;
 }
@@ -916,7 +916,7 @@ body {
 }
 
 /* (zooms in slightnly at 1.1 when hover) */
-.grid-gallery .grid-phtoes:hover img{
+.grid-gallery .grid-photos:hover img{
   transform: scale(1.1);
 }
 
