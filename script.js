@@ -32,27 +32,34 @@ buttonFunction5();
 
 
 
-    let index = 0; //counter
+    let index = 0; //set counter
     function displayImages() {
 
-  let y;
-  const images = document.getElementsByClassName("image-fade");
-  for (y = 0; y < images.length; y++) {
-    images[y].style.display = "none";
-  }
-  index++;
-  if (index > images.length) {
-    index = 1;
-  }
-  images[index-1].style.display = "block";
-  setTimeout(displayImages, 2000); 
+  let y; //set variable y
+  const images = document.getElementsByClassName("image-fade"); //set class variable
+  for (y = 0; y < images.length; y++) {//loop through the 3 images in each set. (0-1-2).
+    images[y].style.display = "none"; //hide the images
   }
 
+  index++;  //add 1 to counter, let index be greater than the image.length which starts at 0.
+
+  if (index > images.length) { //if index is more than the length of image set(3 in each set) which it is from index++. 
+    index = 1;  //let counter = 1 ; 
+  }
+  //index-1 after setting it to 1, so it's now 0.
+  //to control the index of the image that is looping once we hide it
+  //index should be adding each time the code loops.
+  images[index-1].style.display = "block"; //display 
+  //loop#1 at index 0. image at index 0 will appear(1st image in the set of 3). 
+  setTimeout(displayImages, 2000);  //amount of miliseconds to show each images.
+  }
+
+  //same functiuons 
   function displayImages2() {
     let q;
-    const images = document.getElementsByClassName("image-fade-2");
-    for (q = 0; q < images.length; q++) {
-      images[q].style.display = "none";
+    const images = document.getElementsByClassName("image-fade-2");//set class variable
+    for (q = 0; q < images.length; q++) { //for loop
+      images[q].style.display = "none";  //hide images for the slidesshow
     }
     index++;
     if (index > images.length) {
@@ -62,9 +69,10 @@ buttonFunction5();
     setTimeout(displayImages2, 2000); 
     }
     
+    //same function
     function displayImages3() {
         let p;
-        const images = document.getElementsByClassName("image-fade-3");
+        const images = document.getElementsByClassName("image-fade-3");//set class variable
         for (p = 0; p < images.length; p++) {
           images[p].style.display = "none";
         }
@@ -76,9 +84,10 @@ buttonFunction5();
         setTimeout(displayImages3, 2000); 
         }
 
+        //same
         function displayImages4() {
             let q;
-            const images = document.getElementsByClassName("image-fade-4");
+            const images = document.getElementsByClassName("image-fade-4");//set class variable
             for (q = 0; q < images.length; q++) {
               images[q].style.display = "none";
             }
@@ -89,10 +98,10 @@ buttonFunction5();
             images[index-1].style.display = "block";
             setTimeout(displayImages4, 2000); 
             }
-
+            //same 
             function displayImages5() {
                 let q;
-                const images = document.getElementsByClassName("image-fade-5");
+                const images = document.getElementsByClassName("image-fade-5");//set class variable
                 for (q = 0; q < images.length; q++) {
                   images[q].style.display = "none";
                 }
@@ -109,18 +118,20 @@ buttonFunction5();
 
 
       // Show more button functions to hide and show individual buttons
-    function buttonFunction() {
-    const b1 = document.querySelectorAll("#onClick");
-    let i;
-    for (i = 0; i<b1.length; i++){
+    function buttonFunction() {  
+    const b1 = document.querySelectorAll("#onClick");//call paragraph by ID.
+    let i; //set variable 
+    for (i = 0; i<b1.length; i++){ //loop through the index, should be just 1. 
 
-    if (b1[i].style.display === "none") {
-      b1[i].style.display = "block";
+    if (b1[i].style.display === "none") { //if the content is hidden
+      b1[i].style.display = "block";  //we display the content. 
     } 
     else {
-      b1[i].style.display = "none";
-    }
+      b1[i].style.display = "none"; //else keep it hidden. 
+    } //function activates uponclicking the button. 
+    //if content is display. click the button(activate function) will display none. 
   }
+  //each button has it's own function with the same code. 
 
     } //function
 
@@ -139,7 +150,7 @@ buttonFunction5();
       }
     }
   
-      } //function
+      } //each button has it's own function with the same code. 
       function buttonFunction3() {
         const b3 = document.querySelectorAll("#onClick-3");
      
@@ -155,7 +166,7 @@ buttonFunction5();
         }
       }
     
-        } //function
+        } ///each button has it's own function with the same code. 
         function buttonFunction4() {
           const b4 = document.querySelectorAll("#onClick-4");
        let i;
@@ -171,7 +182,7 @@ buttonFunction5();
           }
         }
       
-          } //function
+          } //same
           function buttonFunction5() {
             const b5 = document.querySelectorAll("#onClick-5");
          
@@ -187,20 +198,16 @@ buttonFunction5();
             }
           }
         
-            } //function
+            } //same
 
  
 
-// selet all buttons 
-// loop through buttons
-// hide it in CSS, let it shows in the if statement
-
+// lightbox 
 lightbox.option({ 
-    resizeDuration: 200,
-    wrapAround: true,
-    disableScrolling: true,
-    fitImagesInViewport: true,
-    imageFadeDuration: 60,
+    resizeDuration: 200, // resize images so view dont need to scroll so view images. 
+    wrapAround: true, 
+    disableScrolling: true, //disable scrolling .
+    fitImagesInViewport: true, //image fit viewport. 
+    imageFadeDuration: 60, // resize images so view dont need to scroll so view images. 
   })
-// resize images so view dont need to scroll so view images. 
-// imagefaded, fades once image is open 
+
