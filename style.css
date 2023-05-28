@@ -1009,7 +1009,10 @@ ul.social-icons {
     .made_of_desc h1 {
         font-size: 2.1rem;
     }
-
+    .winter_desc p{
+        text-align: right;
+        margin: 0;
+    }
     .contact_container {
         width: 50%;
         height: 80%;
